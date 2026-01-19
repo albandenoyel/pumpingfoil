@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -19,7 +18,7 @@ const App: React.FC = () => {
         
         <GearGrid 
           id="foils" 
-          title="Best Pump Foils" 
+          title="Pump Foils" 
           items={FOILS} 
         />
         
@@ -27,7 +26,7 @@ const App: React.FC = () => {
         
         <GearGrid 
           id="boards" 
-          title="Best Pump Boards" 
+          title="Pump Boards" 
           items={BOARDS} 
         />
         

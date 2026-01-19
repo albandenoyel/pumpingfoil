@@ -1,4 +1,3 @@
-
 import { GearItem, Tutorial } from './types';
 
 export const FOILS: GearItem[] = [
@@ -31,30 +30,10 @@ export const FOILS: GearItem[] = [
     features: ['2000cm²', 'High Aspect', 'Glide King'],
     link: 'https://srokacompany.com/produit/foil-pumping-2000-ha/',
     price: '999€'
-  },
-  {
-    id: 'f4',
-    brand: 'Alpine',
-    name: 'Modular Alu-Carbon',
-    image: 'https://www.alpinefoil.com/medias/images/alpinefoil-modular-alu-carbone-hm-0670.jpg?v=1',
-    description: 'High-end modular system combining CNC aluminum strength with high-modulus carbon efficiency.',
-    features: ['Modular', 'Precision CNC', 'HM Carbon'],
-    link: 'https://www.alpinefoil.com/kitefoil-windfoil-shop/pumping-dockstart/pumpfoil/pumpfoil-dockstart-modular-alu.html',
-    price: '1474€'
   }
 ];
 
 export const BOARDS: GearItem[] = [
-  {
-    id: 'b1',
-    brand: 'TOOLS',
-    name: 'Dockstart',
-    image: 'https://tools-surfboards.com/cdn/shop/files/IMG_6437.jpg?v=1754556187&width=1426',
-    description: 'Boutique custom shape designed for maximum stiffness and minimum weight. Perfect for technical riders.',
-    features: ['Custom Carbon', 'Ultra Thin', 'Max Stiffness'],
-    link: 'https://tools-surfboards.com/products/dockstart',
-    price: '164€'
-  },
   {
     id: 'b2',
     brand: 'Takoon',
@@ -91,7 +70,7 @@ export const TUTORIALS: Tutorial[] = [
   {
     id: 't1',
     title: 'Dock Start Mastery',
-    author: 'Nicolas Iten',
+    author: '@yvonvite_AXIS',
     duration: '06:18',
     thumbnail: 'https://img.youtube.com/vi/WSXoRP9TB3U/maxresdefault.jpg',
     url: 'https://www.youtube.com/watch?v=WSXoRP9TB3U'
@@ -99,7 +78,7 @@ export const TUTORIALS: Tutorial[] = [
   {
     id: 't2',
     title: 'How to Pump Any Foil',
-    author: 'Nicolas Iten',
+    author: '@wakethief',
     duration: '08:13',
     thumbnail: 'https://img.youtube.com/vi/QpjtsrMWv2U/maxresdefault.jpg',
     url: 'https://www.youtube.com/watch?v=QpjtsrMWv2U'
@@ -107,7 +86,7 @@ export const TUTORIALS: Tutorial[] = [
   {
     id: 't3',
     title: 'Pump Foil Advanced Tips',
-    author: 'Steeze',
+    author: '@gaelfoil',
     duration: '12:45',
     thumbnail: 'https://img.youtube.com/vi/hWIveY2OV-E/maxresdefault.jpg',
     url: 'https://www.youtube.com/watch?v=hWIveY2OV-E'
@@ -115,7 +94,7 @@ export const TUTORIALS: Tutorial[] = [
   {
     id: 't4',
     title: 'The Pumping Handbook',
-    author: 'GONG Galaxy',
+    author: '@arthurfoil',
     duration: '04:30',
     thumbnail: 'https://img.youtube.com/vi/O9D2zwtnYe0/maxresdefault.jpg',
     url: 'https://www.youtube.com/watch?v=O9D2zwtnYe0'
@@ -123,7 +102,7 @@ export const TUTORIALS: Tutorial[] = [
   {
     id: 't5',
     title: 'Pumping Endurance Secrets',
-    author: 'Foil the World',
+    author: '@Ludo_freefoiler',
     duration: '15:20',
     thumbnail: 'https://img.youtube.com/vi/6-dSKiGtGk8/maxresdefault.jpg',
     url: 'https://www.youtube.com/watch?v=6-dSKiGtGk8'
