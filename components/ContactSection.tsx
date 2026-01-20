@@ -19,7 +19,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-black text-[#001f3f] uppercase tracking-widest text-sm">Direct Line</h4>
-                  <p className="text-slate-500 font-bold">fly@pumpfoilhub.com</p>
+                  <p className="text-slate-500 font-bold">hello@pumpingfoil.com</p>
                 </div>
               </div>
               
