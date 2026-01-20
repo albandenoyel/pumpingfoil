@@ -148,14 +148,6 @@ export const BOARDS: GearItem[] = [
 
 export const TUTORIALS: Tutorial[] = [
   {
-    id: 't-carla',
-    title: 'How to dockstart easily',
-    author: '@carla-surfskate',
-    duration: '03:15',
-    thumbnail: 'https://img.youtube.com/vi/hFKKHqRgdGw/hqdefault.jpg',
-    url: 'https://www.youtube.com/watch?v=hFKKHqRgdGw'
-  },
-  {
     id: 't1',
     title: 'Best way to learn dockstart',
     author: '@yvonvite_AXIS',
@@ -194,5 +186,13 @@ export const TUTORIALS: Tutorial[] = [
     duration: '15:20',
     thumbnail: 'https://img.youtube.com/vi/6-dSKiGtGk8/hqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=6-dSKiGtGk8'
+  },
+  {
+    id: 't-carla',
+    title: 'How to dockstart easily',
+    author: '@carla-surfskate',
+    duration: '03:15',
+    thumbnail: 'https://img.youtube.com/vi/hFKKHqRgdGw/hqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=hFKKHqRgdGw'
   }
 ];
