@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Hero: React.FC = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
   return (
     <section className="relative pt-40 pb-24 overflow-hidden bg-slate-900 text-white min-h-[90vh] flex items-center">
       {/* Background Image Layer */}
@@ -29,17 +31,51 @@ const Hero: React.FC = () => {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-5">
-            <a href="#foils" className="group px-10 py-5 bg-cyan-500 hover:bg-cyan-400 text-blue-950 font-black rounded-2xl transition-all text-center shadow-xl shadow-cyan-500/30 uppercase tracking-widest text-xs flex items-center justify-center gap-3">
+          <div className="flex flex-col sm:flex-row gap-5 items-center">
+            <a href="#foils" className="group px-10 py-5 bg-cyan-500 hover:bg-cyan-400 text-blue-950 font-black rounded-2xl transition-all text-center shadow-xl shadow-cyan-500/30 uppercase tracking-widest text-xs flex items-center justify-center gap-3 w-full sm:w-auto">
               Find Your Gear
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </a>
-            <a href="#tutorials" className="px-10 py-5 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-black rounded-2xl border border-white/20 transition-all text-center uppercase tracking-widest text-xs">
-              Browse tutorials
-            </a>
+
+            <button 
+              onClick={() => setShowVideo(true)}
+              className="px-10 py-5 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-black rounded-2xl border border-white/20 transition-all text-center uppercase tracking-widest text-xs flex items-center justify-center gap-3 w-full sm:w-auto group"
+            >
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
+              </span>
+              See it in action
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      {showVideo && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-10 animate-fadeIn">
+          <div className="absolute inset-0 bg-slate-950/90 backdrop-blur-xl" onClick={() => setShowVideo(false)}></div>
+          <div className="relative w-full max-w-5xl aspect-video bg-black rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 animate-scaleIn">
+            <button 
+              onClick={() => setShowVideo(false)}
+              className="absolute top-6 right-6 z-10 p-4 bg-white/10 hover:bg-white/20 text-white rounded-2xl backdrop-blur-md transition-all group"
+            >
+              <svg className="w-6 h-6 group-hover:rotate-90 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <iframe 
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/7F4LxOjEy8Y?si=a1gvEnTzJl8cD48L&autoplay=1" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
 
       <style>{`
         @keyframes subtle-zoom {

@@ -82,6 +82,12 @@
       { id: 't-carla', title: 'How to dockstart easily', author: '@carla-surfskate', duration: '03:15', thumbnail: 'https://img.youtube.com/vi/hFKKHqRgdGw/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=hFKKHqRgdGw' }
     ];
 
+    const NEWS = [
+      { id: 'n1', title: 'The Future of Carbon Pumping Wings', excerpt: 'Deep dive into the latest carbon layup techniques that are making wings stiffer and more efficient than ever before.', date: 'Mar 15, 2026', category: 'Tech', image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800', readTime: '6 min read', link: '#' },
+      { id: 'n2', title: 'Paris Pumping Community: Spring Meetup', excerpt: 'Recap of last weekend\'s massive gathering at Bassin de la Villette. Over 50 riders shared the dock for a full day of flight.', date: 'Mar 10, 2026', category: 'Community', image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=80&w=800', readTime: '4 min read', link: '#' },
+      { id: 'n3', title: 'Review: Takoon Pump V4 Carbon', excerpt: 'Is the new wood-carbon sandwich construction worth the upgrade? We put it to the test on a 10km river run.', date: 'Mar 05, 2026', category: 'Review', image: 'https://images.unsplash.com/photo-1534151303201-a07ad0448335?auto=format&fit=crop&q=80&w=800', readTime: '8 min read', link: '#' }
+    ];
+
     // --- COMPONENTS ---
 
     const Navbar = () => {
@@ -98,6 +104,7 @@
         { name: 'Foils', href: '#foils' },
         { name: 'Boards', href: '#boards' },
         { name: 'Tutorials', href: '#tutorials' },
+        { name: 'News', href: '#news' },
         { name: 'Spots', href: '#spots' },
         { name: 'Contact', href: '#contact' },
       ];
@@ -145,34 +152,71 @@
       );
     };
 
-    const Hero = () => (
-      <section className="relative pt-40 pb-24 overflow-hidden bg-slate-900 text-white min-h-[90vh] flex items-center">
-        <div className="absolute inset-0 z-0">
-          <img src="https://i.imgur.com/YBYttOq.jpeg" alt="Pumping foil session" className="w-full h-full object-cover object-center scale-105 animate-[subtle-zoom_20s_infinite_alternate]" />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/40 to-transparent"></div>
-          <div className="absolute inset-0 bg-black/20"></div>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
-          <div className="max-w-5xl">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-10 leading-[0.9] tracking-tighter uppercase drop-shadow-2xl">
-              Get started with <br className="hidden md:block" /> <span className="text-cyan-400">Pumping Foil</span>
-            </h1>
-            <p className="max-w-3xl mb-12 text-lg md:text-xl text-blue-50 leading-relaxed font-medium drop-shadow-lg">
-              A pumping foil is a hydrofoil connected to a board, powered just by your legs, which lets you fly above water. The feeling of glide is absolutely unique. You can practice this magical sport every day of the year, and anywhere there is water.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-5">
-              <a href="#foils" className="px-10 py-5 bg-cyan-500 hover:bg-cyan-400 text-blue-950 font-black rounded-2xl transition-all text-center uppercase tracking-widest text-xs flex items-center justify-center gap-3">
-                Find Your Gear
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-              </a>
-              <a href="#tutorials" className="px-10 py-5 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-black rounded-2xl border border-white/20 transition-all text-center uppercase tracking-widest text-xs">
-                Browse tutorials
-              </a>
+    const Hero = () => {
+      const [showVideo, setShowVideo] = useState(false);
+
+      return (
+        <section className="relative pt-40 pb-24 overflow-hidden bg-slate-900 text-white min-h-[90vh] flex items-center">
+          <div className="absolute inset-0 z-0">
+            <img src="https://i.imgur.com/YBYttOq.jpeg" alt="Pumping foil session" className="w-full h-full object-cover object-center scale-105 animate-[subtle-zoom_20s_infinite_alternate]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/40 to-transparent"></div>
+            <div className="absolute inset-0 bg-black/20"></div>
+          </div>
+          <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
+            <div className="max-w-5xl">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-10 leading-[0.9] tracking-tighter uppercase drop-shadow-2xl">
+                Get started with <br className="hidden md:block" /> <span className="text-cyan-400">Pumping Foil</span>
+              </h1>
+              <p className="max-w-3xl mb-12 text-lg md:text-xl text-blue-50 leading-relaxed font-medium drop-shadow-lg">
+                A pumping foil is a hydrofoil connected to a board, powered just by your legs, which lets you fly above water. The feeling of glide is absolutely unique. You can practice this magical sport every day of the year, and anywhere there is water.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-5 items-center">
+                <a href="#foils" className="px-10 py-5 bg-cyan-500 hover:bg-cyan-400 text-blue-950 font-black rounded-2xl transition-all text-center uppercase tracking-widest text-xs flex items-center justify-center gap-3 w-full sm:w-auto">
+                  Find Your Gear
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                </a>
+                
+                <button 
+                  onClick={() => setShowVideo(true)}
+                  className="px-10 py-5 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-black rounded-2xl border border-white/20 transition-all text-center uppercase tracking-widest text-xs flex items-center justify-center gap-3 w-full sm:w-auto group"
+                >
+                  <span className="flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-cyan-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
+                  </span>
+                  See it in action
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    );
+
+          {showVideo && (
+            <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-10 animate-fadeIn">
+              <div className="absolute inset-0 bg-slate-950/95 backdrop-blur-xl" onClick={() => setShowVideo(false)}></div>
+              <div className="relative w-full max-w-5xl aspect-video bg-black rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 animate-scaleIn">
+                <button 
+                  onClick={() => setShowVideo(false)}
+                  className="absolute top-6 right-6 z-10 p-4 bg-white/10 hover:bg-white/20 text-white rounded-2xl backdrop-blur-md transition-all group"
+                >
+                  <svg className="w-6 h-6 group-hover:rotate-90 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+                <iframe 
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/7F4LxOjEy8Y?si=a1gvEnTzJl8cD48L&autoplay=1" 
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          )}
+        </section>
+      );
+    };
 
     const GearGrid = ({ title, items, id }) => (
       <section id={id} className="py-24 bg-slate-50">
@@ -229,8 +273,34 @@
       </section>
     );
 
+    const NewsSection = () => (
+      <section id="news" className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-[#001f3f] mb-4 uppercase tracking-tighter">Latest News</h2>
+            <div className="h-1.5 w-20 bg-cyan-500 rounded-full"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {NEWS.map((item) => (
+              <div key={item.id} className="group bg-slate-50 rounded-[2.5rem] overflow-hidden border border-slate-100 hover:shadow-2xl transition-all">
+                <div className="aspect-video overflow-hidden">
+                  <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="p-8 flex flex-col">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-cyan-600 mb-2">{item.category} • {item.date}</span>
+                  <h3 className="text-xl font-black text-[#001f3f] mb-4 group-hover:text-cyan-600 transition-colors leading-tight uppercase tracking-tight">{item.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6">{item.excerpt}</p>
+                  <a href={item.link} className="text-xs font-black uppercase tracking-widest text-[#001f3f] hover:text-cyan-500 transition-colors flex items-center gap-2">Read More <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg></a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+
     const SpotsSection = () => (
-      <section id="spots" className="py-24 bg-white">
+      <section id="spots" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-black text-[#001f3f] mb-2 uppercase tracking-tighter">Pumping spots</h2>
           <p className="text-lg text-slate-500 mb-12 font-medium">The best spots for pumping foil around Paris</p>
@@ -310,6 +380,7 @@
           <GearGrid id="foils" title="Foils" items={FOILS} />
           <GearGrid id="boards" title="Boards" items={BOARDS} />
           <TutorialsSection />
+          <NewsSection />
           <SpotsSection />
           <ContactSection />
         </main>
