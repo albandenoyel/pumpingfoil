@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const SpotsSection: React.FC = () => {
@@ -26,7 +25,15 @@ const SpotsSection: React.FC = () => {
           </div>
         </div>
         
-        <div className="mt-8 text-center">
+        <div className="mt-12 flex flex-col items-center gap-6 text-center">
+          <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLScoBWZayTg0I_BBVrEmTKAtkTTIpE9lIIPDxPBfq9Z-q6HzaA/viewform?usp=header" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-10 py-5 bg-[#001f3f] hover:bg-cyan-500 text-white hover:text-blue-950 font-black rounded-2xl transition-all uppercase tracking-widest text-xs shadow-xl shadow-blue-900/20"
+          >
+            Submit a spot
+          </a>
           <a 
             href="https://www.google.com/maps/d/viewer?mid=1MKE0DkN8-Qgfu1haEmj1Cp-5UGeSTC0&hl=en&usp=sharing" 
             target="_blank" 

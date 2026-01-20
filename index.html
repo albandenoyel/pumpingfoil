@@ -72,11 +72,12 @@
     ];
 
     const TUTORIALS = [
-      { id: 't1', title: 'Dock Start Mastery', author: '@yvonvite_AXIS', duration: '06:18', thumbnail: 'https://img.youtube.com/vi/WSXoRP9TB3U/maxresdefault.jpg', url: 'https://www.youtube.com/watch?v=WSXoRP9TB3U' },
-      { id: 't2', title: 'How to Pump Any Foil', author: '@wakethief', duration: '08:13', thumbnail: 'https://img.youtube.com/vi/QpjtsrMWv2U/maxresdefault.jpg', url: 'https://www.youtube.com/watch?v=QpjtsrMWv2U' },
-      { id: 't3', title: 'Pump Foil Advanced Tips', author: '@gaelfoil', duration: '12:45', thumbnail: 'https://img.youtube.com/vi/hWIveY2OV-E/maxresdefault.jpg', url: 'https://www.youtube.com/watch?v=hWIveY2OV-E' },
-      { id: 't4', title: 'The Pumping Handbook', author: '@arthurfoil', duration: '04:30', thumbnail: 'https://img.youtube.com/vi/O9D2zwtnYe0/maxresdefault.jpg', url: 'https://www.youtube.com/watch?v=O9D2zwtnYe0' },
-      { id: 't5', title: 'Pumping Endurance Secrets', author: '@Ludo_freefoiler', duration: '15:20', thumbnail: 'https://img.youtube.com/vi/6-dSKiGtGk8/maxresdefault.jpg', url: 'https://www.youtube.com/watch?v=6-dSKiGtGk8' }
+      { id: 't-carla', title: 'How to dockstart easily', author: '@carla-surfskate', duration: '03:15', thumbnail: 'https://img.youtube.com/vi/hFKKHqRgdGw/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=hFKKHqRgdGw' },
+      { id: 't1', title: 'Best way to learn dockstart', author: '@yvonvite_AXIS', duration: '06:18', thumbnail: 'https://img.youtube.com/vi/WSXoRP9TB3U/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=WSXoRP9TB3U' },
+      { id: 't2', title: 'How to dock start a hydrofoil', author: '@wakethief', duration: '08:13', thumbnail: 'https://img.youtube.com/vi/QpjtsrMWv2U/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=QpjtsrMWv2U' },
+      { id: 't3', title: 'The 6 steps drill for easy dockstart', author: '@gaelfoil', duration: '12:45', thumbnail: 'https://img.youtube.com/vi/hWIveY2OV-E/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=hWIveY2OV-E' },
+      { id: 't4', title: 'Tuto dockstart / Pumpfoil', author: '@arthurfoil', duration: '04:30', thumbnail: 'https://img.youtube.com/vi/O9D2zwtnYe0/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=O9D2zwtnYe0' },
+      { id: 't5', title: 'How to dockstart / pumpfoil', author: '@Ludo_freefoiler', duration: '15:20', thumbnail: 'https://img.youtube.com/vi/6-dSKiGtGk8/hqdefault.jpg', url: 'https://www.youtube.com/watch?v=6-dSKiGtGk8' }
     ];
 
     // --- COMPONENTS ---
@@ -203,8 +204,8 @@
       <section id="tutorials" className="py-24 bg-[#001f3f] text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-20 max-w-xl">
-            <h2 className="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tighter">The Flight School</h2>
-            <p className="text-blue-200/60 text-lg">Mastering the dock start and the sustained pump takes patience. These sessions will guide you from first splash to first mile.</p>
+            <h2 className="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tighter">The pumping school</h2>
+            <p className="text-blue-200/60 text-lg">Mastering dockstart and sustained pumping takes resilience. These tutorials will guide you from first splash to first minute</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {TUTORIALS.map((tut) => (
@@ -233,6 +234,16 @@
           <p className="text-lg text-slate-500 mb-12 font-medium">The best spots for pumping foil around Paris</p>
           <div className="relative bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-blue-100 min-h-[500px] mt-4">
             <iframe src="https://www.google.com/maps/d/embed?mid=1MKE0DkN8-Qgfu1haEmj1Cp-5UGeSTC0" width="100%" height="500" className="border-0"></iframe>
+          </div>
+          <div className="mt-12 flex flex-col items-center gap-6">
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLScoBWZayTg0I_BBVrEmTKAtkTTIpE9lIIPDxPBfq9Z-q6HzaA/viewform?usp=header" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-10 py-5 bg-[#001f3f] hover:bg-cyan-500 text-white hover:text-blue-950 font-black rounded-2xl transition-all uppercase tracking-widest text-xs shadow-xl shadow-blue-900/20"
+            >
+              Submit a spot
+            </a>
           </div>
         </div>
       </section>
@@ -268,7 +279,7 @@
               <input type="text" className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl px-5 py-4 font-bold text-[#001f3f] focus:border-cyan-400 outline-none transition-all" placeholder="YOUR NAME" />
               <input type="email" className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl px-5 py-4 font-bold text-[#001f3f] focus:border-cyan-400 outline-none transition-all" placeholder="YOUR EMAIL" />
               <textarea rows="4" className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl px-5 py-4 font-bold text-[#001f3f] focus:border-cyan-400 outline-none transition-all" placeholder="YOUR MESSAGE"></textarea>
-              <button className="w-full bg-[#001f3f] hover:bg-cyan-500 text-white hover:text-blue-950 font-black py-5 rounded-2xl transition-all uppercase tracking-widest shadow-xl shadow-[#001f3f]/20">Send Signal</button>
+              <button className="w-full bg-[#001f3f] hover:bg-cyan-500 text-white hover:text-blue-950 font-black py-5 rounded-2xl transition-all uppercase tracking-widest shadow-xl shadow-[#001f3f]/20">Send</button>
             </form>
           </div>
         </div>
@@ -284,7 +295,7 @@
               </div>
               <span className="text-xl font-black tracking-tighter uppercase">PUMPING FOIL</span>
           </div>
-          <p className="text-blue-200/30 text-[10px] font-black uppercase tracking-[0.3em]">© {new Date().getFullYear()} PUMPINGFOIL NETWORK.</p>
+          <p className="text-blue-200/30 text-[10px] font-black uppercase tracking-[0.3em]">© 2026 pumpingfoil.com</p>
         </div>
       </footer>
     );
@@ -294,8 +305,8 @@
         <Navbar />
         <main className="flex-grow">
           <Hero />
-          <GearGrid id="foils" title="Top Foils" items={FOILS} />
-          <GearGrid id="boards" title="Top Boards" items={BOARDS} />
+          <GearGrid id="foils" title="Foils" items={FOILS} />
+          <GearGrid id="boards" title="Boards" items={BOARDS} />
           <TutorialsSection />
           <SpotsSection />
           <ContactSection />

@@ -18,13 +18,13 @@ const App: React.FC = () => {
         
         <GearGrid 
           id="foils" 
-          title="Top Foils" 
+          title="Foils" 
           items={FOILS} 
         />
 
         <GearGrid 
           id="boards" 
-          title="Top Boards" 
+          title="Boards" 
           items={BOARDS} 
         />
         

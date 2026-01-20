@@ -148,43 +148,51 @@ export const BOARDS: GearItem[] = [
 
 export const TUTORIALS: Tutorial[] = [
   {
+    id: 't-carla',
+    title: 'How to dockstart easily',
+    author: '@carla-surfskate',
+    duration: '03:15',
+    thumbnail: 'https://img.youtube.com/vi/hFKKHqRgdGw/hqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=hFKKHqRgdGw'
+  },
+  {
     id: 't1',
-    title: 'Dock Start Mastery',
+    title: 'Best way to learn dockstart',
     author: '@yvonvite_AXIS',
     duration: '06:18',
-    thumbnail: 'https://img.youtube.com/vi/WSXoRP9TB3U/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/WSXoRP9TB3U/hqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=WSXoRP9TB3U'
   },
   {
     id: 't2',
-    title: 'How to Pump Any Foil',
+    title: 'How to dock start a hydrofoil',
     author: '@wakethief',
     duration: '08:13',
-    thumbnail: 'https://img.youtube.com/vi/QpjtsrMWv2U/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/QpjtsrMWv2U/hqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=QpjtsrMWv2U'
   },
   {
     id: 't3',
-    title: 'Pump Foil Advanced Tips',
+    title: 'The 6 steps drill for easy dockstart',
     author: '@gaelfoil',
     duration: '12:45',
-    thumbnail: 'https://img.youtube.com/vi/hWIveY2OV-E/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/hWIveY2OV-E/hqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=hWIveY2OV-E'
   },
   {
     id: 't4',
-    title: 'The Pumping Handbook',
+    title: 'Tuto dockstart / Pumpfoil',
     author: '@arthurfoil',
     duration: '04:30',
-    thumbnail: 'https://img.youtube.com/vi/O9D2zwtnYe0/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/O9D2zwtnYe0/hqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=O9D2zwtnYe0'
   },
   {
     id: 't5',
-    title: 'Pumping Endurance Secrets',
+    title: 'How to dockstart / pumpfoil',
     author: '@Ludo_freefoiler',
     duration: '15:20',
-    thumbnail: 'https://img.youtube.com/vi/6-dSKiGtGk8/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/6-dSKiGtGk8/hqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=6-dSKiGtGk8'
   }
 ];

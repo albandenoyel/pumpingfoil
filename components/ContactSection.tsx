@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const ContactSection: React.FC = () => {
@@ -63,7 +62,7 @@ const ContactSection: React.FC = () => {
                 <textarea rows={4} className="w-full bg-slate-50 border-2 border-slate-100 rounded-2xl px-5 py-4 focus:outline-none focus:border-cyan-400 focus:bg-white transition-all font-bold text-blue-900" placeholder="MESSAGE..."></textarea>
               </div>
               <button className="w-full bg-[#001f3f] hover:bg-cyan-500 text-white hover:text-blue-950 font-black py-5 rounded-2xl shadow-xl shadow-blue-900/20 transition-all uppercase tracking-[0.3em] text-xs">
-                Send Signal
+                Send
               </button>
             </form>
           </div>

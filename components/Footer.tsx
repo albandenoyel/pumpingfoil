@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           </div>
           
           <p className="text-blue-200/30 text-[10px] font-black uppercase tracking-[0.3em]">
-            © {new Date().getFullYear()} PUMPINGFOIL NETWORK.
+            © 2026 pumpingfoil.com
           </p>
         </div>
       </div>
