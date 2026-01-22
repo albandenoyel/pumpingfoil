@@ -6,7 +6,7 @@ import TutorialsSection from './components/TutorialsSection';
 import SpotsSection from './components/SpotsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
-import { FOILS, BOARDS } from './constants';
+import { FOILS, BOARDS, RESOURCES } from './constants';
 
 const App: React.FC = () => {
   return (
@@ -33,6 +33,13 @@ const App: React.FC = () => {
         <TutorialsSection />
         
         <SpotsSection />
+
+        <GearGrid 
+          id="resources" 
+          title="Resources" 
+          subtitle="A selection of community resources to help in your pump foiling journey"
+          items={RESOURCES} 
+        />
         
         <ContactSection />
       </main>

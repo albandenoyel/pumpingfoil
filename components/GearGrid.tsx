@@ -25,11 +25,11 @@ const GearGrid: React.FC<GearGridProps> = ({ title, subtitle, items, id }) => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
           {items.map((item) => (
             <div key={item.id} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full hover:-translate-y-1">
-              <div className="relative aspect-square overflow-hidden bg-white p-4 flex items-center justify-center">
+              <div className="relative aspect-square overflow-hidden bg-white flex items-center justify-center">
                 <img 
                   src={item.image} 
                   alt={item.name} 
-                  className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
                 <div className="absolute top-3 left-3 flex flex-col gap-1.5">

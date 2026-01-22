@@ -1,4 +1,3 @@
-
 import { GearItem, Tutorial } from './types';
 
 export const FOILS: GearItem[] = [
@@ -225,5 +224,38 @@ export const TUTORIALS: Tutorial[] = [
     duration: '03:15',
     thumbnail: 'https://img.youtube.com/vi/hFKKHqRgdGw/hqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=hFKKHqRgdGw'
+  }
+];
+
+export const RESOURCES: GearItem[] = [
+  {
+    id: 'r-fb',
+    brand: 'Facebook',
+    name: 'Dockstart Group',
+    image: 'https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/471584317_10162546427986941_2982999082253017794_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2285d6&_nc_ohc=d8SR2gfaQscQ7kNvwFCdQsR&_nc_oc=AdlO8Rdia1li36Nom2s2hK6LRo3xF3mF_x4vBrcEV3rXDp_AEU0SdxRH226_MgjaLk9FLTmNzZsuZXl-mXNJzklX&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=DzvxREZQOujgwhKX1FnLJQ&oh=00_Afqq0XsguH8njPUjNnZ23HCthzRPM4ayb2nvAiVX4o1iYA&oe=69782C85',
+    description: 'The largest community for sharing tips and sessions.',
+    features: [],
+    link: 'https://www.facebook.com/groups/dockstart',
+    price: '17.1k Members'
+  },
+  {
+    id: 'r-fm',
+    brand: 'App',
+    name: 'Foilmotion Tracking',
+    image: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/30/4c/55/304c5573-2d93-1437-b22b-318b9db3430d/Placeholder.mill/1200x630wa.jpg',
+    description: 'Specifically built for pump foilers and wingers.',
+    features: [],
+    link: 'https://apps.apple.com/us/app/foil-wing-surf-foilmotion/id6737276093',
+    price: 'App Store'
+  },
+  {
+    id: 'r-wt',
+    brand: 'Power Pumper Club',
+    name: '1 Minute Challenge',
+    image: 'https://static.wixstatic.com/media/2e9529_7bb0c1529bcf48738f371ebacb91487f~mv2.png/v1/fill/w_1960,h_1400,al_c,q_95,usm_0.66_1.00_0.01,enc_avif,quality_auto/Wix-3.png',
+    description: 'The ultimate endurance test for the pumping community.',
+    features: [],
+    link: 'https://www.wakethief.com/1min-challenge',
+    price: 'Challenge'
   }
 ];
