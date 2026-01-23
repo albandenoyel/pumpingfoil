@@ -257,5 +257,15 @@ export const RESOURCES: GearItem[] = [
     features: [],
     link: 'https://www.wakethief.com/1min-challenge',
     price: 'Challenge'
+  },
+  {
+    id: 'r-podcast',
+    brand: 'Podcast',
+    name: 'Up on Foil',
+    image: 'https://img.rss.com/up-on-foil/536/20251119_091107_21d6a1d282c3a6288e97ae5f7ca9413c.png',
+    description: 'Conversations with the people pushing foiling forward.',
+    features: [],
+    link: 'https://www.uponfoil.com/',
+    price: ''
   }
 ];
