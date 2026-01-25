@@ -19,14 +19,14 @@ const App: React.FC = () => {
         <GearGrid 
           id="foils" 
           title="Foils" 
-          subtitle="Here are some of the most common foils to get started with pump foiling. Brands typically offer various sizes, which you can pick based on your weight and what you want to optimize for, speed - small surface - or endurance - large surface."
+          subtitle="Here are some of the most common foils to get started with pump foiling. Brands usually offer various front wing sizes, which you can pick based on your weight, level and what you want to optimize for, speed or endurance."
           items={FOILS} 
         />
 
         <GearGrid 
           id="boards" 
           title="Boards" 
-          subtitle="Here are some of the most common boards to get started with pump foiling. You want a board that is as rigid as possible, and ideally as light as possible. Lighter comes at a price though."
+          subtitle="Here are some of the most common boards to get started with pump foiling. You want a board that is as rigid as possible, and ideally as light as possible."
           items={BOARDS} 
         />
         

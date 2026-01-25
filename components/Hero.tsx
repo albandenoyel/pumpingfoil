@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const Hero: React.FC = () => {
@@ -10,7 +9,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src="https://i.imgur.com/YBYttOq.jpeg" 
-          alt="Pumping foil session" 
+          alt="Pump foil session" 
           className="w-full h-full object-cover object-center scale-105 animate-[subtle-zoom_20s_infinite_alternate]"
           loading="eager"
         />
@@ -28,7 +27,7 @@ const Hero: React.FC = () => {
           
           <div className="max-w-3xl mb-12">
             <p className="text-lg md:text-xl text-blue-50 leading-relaxed font-medium drop-shadow-lg">
-              A pumping foil is a hydrofoil connected to a board, powered just by your legs, which lets you fly above water. The feeling of glide is absolutely unique. You can practice this magical sport every day of the year, and anywhere there is water. You will find here ressources about the best foils, boards, tutorials and spots to get started with foil pumping.
+              A pump foil is a hydrofoil connected to a board, powered just by your legs, which lets you fly above water. The feeling of glide is absolutely unique. You can practice this magical sport every day of the year, and anywhere there is water. You will find here ressources about the best foils, boards, tutorials and spots to get started with foil pumping.
             </p>
           </div>
           

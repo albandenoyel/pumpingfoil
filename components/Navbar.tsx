@@ -29,11 +29,11 @@ const Navbar: React.FC = () => {
             <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg shadow-cyan-500/20 overflow-hidden">
                 <img 
                   src="logo.png" 
-                  alt="Pumping Foil Logo" 
+                  alt="Pump Foil Logo" 
                   className="w-full h-full object-cover"
                 />
             </div>
-            <span className="text-2xl font-black text-white tracking-tighter uppercase">PUMPING FOIL .com</span>
+            <span className="text-2xl font-black text-white tracking-tighter uppercase">Pump foil</span>
           </div>
           
           <div className="hidden md:block">

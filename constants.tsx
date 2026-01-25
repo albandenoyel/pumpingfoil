@@ -70,6 +70,16 @@ export const FOILS: GearItem[] = [
     features: [],
     link: 'https://afs-foiling.com/fr/produit/foil-complet-enduro-glt/',
     price: '2,066€'
+  },
+  {
+    id: 'f-axis-wakethief',
+    brand: 'Axis',
+    name: 'Wake Thief Original Edition',
+    image: 'https://axisfoils.com/cdn/shop/products/axis-foils-wake-thief-front-product-image_1296x.jpg?v=1620949745',
+    description: '',
+    features: [],
+    link: 'https://axisfoils.com/products/axis-foils-wake-thief-original-edition',
+    price: '1,670€'
   }
 ];
 
@@ -147,12 +157,12 @@ export const BOARDS: GearItem[] = [
   {
     id: 'b-ketos',
     brand: 'Ketos',
-    name: 'Ketos Pump Evo 90',
-    image: 'https://www.ketos-foil.com/wp-content/uploads/2024/09/Photoroom_20250212_112603.jpg',
+    name: 'Ketos Skull',
+    image: 'https://www.ketos-foil.com/wp-content/uploads/2025/05/SKULL-80-.png',
     description: '',
     features: [],
-    link: 'https://www.ketos-foil.com/en/pumping-board/board-pumping-evo-90/',
-    price: '800€'
+    link: 'https://www.ketos-foil.com/en/pumping-en/board-dockstart-pumping-skull80/',
+    price: '1,299€'
   },
   {
     id: 'b-alpine',
@@ -267,5 +277,15 @@ export const RESOURCES: GearItem[] = [
     features: [],
     link: 'https://www.uponfoil.com/',
     price: ''
+  },
+  {
+    id: 'r-physics',
+    brand: 'Physics',
+    name: 'Pump foil physics simulator',
+    image: 'https://i.imgur.com/hb9Ymq2.png',
+    description: 'Understand the forces and dynamics behind the infinite flight.',
+    features: [],
+    link: 'https://lsegessemann.github.io/foilphysics',
+    price: 'Interactive'
   }
 ];

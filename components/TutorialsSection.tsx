@@ -9,7 +9,7 @@ const TutorialsSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-xl">
-            <h2 className="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tighter">The pumping school</h2>
+            <h2 className="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tighter">The pump foil school</h2>
             <p className="text-blue-200/60 text-lg leading-relaxed">
               Mastering dockstart and sustained pumping takes resilience. These tutorials will guide you from first splash to first minute
             </p>

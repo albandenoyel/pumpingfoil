@@ -9,11 +9,11 @@ const Footer: React.FC = () => {
             <div className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-2xl shadow-cyan-500/20 overflow-hidden">
                <img 
                   src="logo.png" 
-                  alt="Pumping Foil Logo" 
+                  alt="Pump Foil Logo" 
                   className="w-full h-full object-cover"
                 />
             </div>
-            <span className="text-2xl font-black tracking-tighter uppercase">PUMPINGFOIL</span>
+            <span className="text-2xl font-black tracking-tighter uppercase">Pump foil</span>
           </div>
           
           <div className="flex gap-10">
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           </div>
           
           <p className="text-blue-200/30 text-[10px] font-black uppercase tracking-[0.3em]">
-            © 2026 pumpingfoil.com
+            © 2026 pumpfoil.com
           </p>
         </div>
       </div>

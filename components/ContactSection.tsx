@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const ContactSection: React.FC = () => {
@@ -61,7 +60,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-black text-[#001f3f] uppercase tracking-widest text-sm">Direct Inbox</h4>
-                  <p className="text-slate-500 font-bold">hello@pumpingfoil.com</p>
+                  <p className="text-slate-500 font-bold">hello@pumpfoil.com</p>
                 </div>
               </div>
             </div>
