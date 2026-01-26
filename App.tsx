@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import GearGrid from './components/GearGrid';
 import TutorialsSection from './components/TutorialsSection';
 import SpotsSection from './components/SpotsSection';
+import FaqSection from './components/FaqSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import { FOILS, BOARDS, RESOURCES } from './constants';
@@ -29,7 +30,7 @@ const App: React.FC = () => {
           subtitle="Here are some of the most common boards to get started with pump foiling. You want a board that is as rigid as possible, and ideally as light as possible."
           items={BOARDS} 
         />
-        
+
         <TutorialsSection />
         
         <SpotsSection />
@@ -40,6 +41,8 @@ const App: React.FC = () => {
           subtitle="A selection of community resources to help in your pump foiling journey"
           items={RESOURCES} 
         />
+        
+        <FaqSection />
         
         <ContactSection />
       </main>
