@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import GearGrid from './components/GearGrid';
 import TutorialsSection from './components/TutorialsSection';
 import SpotsSection from './components/SpotsSection';
+import NewsSection from './components/NewsSection';
 import FaqSection from './components/FaqSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -34,6 +35,8 @@ const App: React.FC = () => {
         <TutorialsSection />
         
         <SpotsSection />
+
+        <NewsSection />
 
         <GearGrid 
           id="resources" 
