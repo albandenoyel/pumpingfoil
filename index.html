@@ -86,10 +86,10 @@
     ];
 
     const RESOURCES = [
-      { id: 'r-fb', brand: 'Facebook', name: 'Dockstart Group', image: 'https://scontent-cdg4-2.xx.fbcdn.net/v/t39.30808-6/471584317_10162546427986941_2982999082253017794_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2285d6&_nc_ohc=d8SR2gfaQscQ7kNvwFCdQsR&_nc_oc=AdlO8Rdia1li36Nom2s2hK6LRo3xF3mF_x4vBrcEV3rXDp_AEU0SdxRH226_MgjaLk9FLTmNzZsuZXl-mXNJzklX&_nc_zt=23&_nc_ht=scontent-cdg4-2.xx&_nc_gid=DzvxREZQOujgwhKX1FnLJQ&oh=00_Afqq0XsguH8njPUjNnZ23HCthzRPM4ayb2nvAiVX4o1iYA&oe=69782C85', link: 'https://www.facebook.com/groups/dockstart', price: '17.1k Members' },
+      { id: 'r-fb', brand: 'Facebook', name: 'Dockstart Group', image: 'https://i.imgur.com/6chKvsJ.jpeg', link: 'https://www.facebook.com/groups/dockstart', price: '17.1k Members' },
       { id: 'r-fm', brand: 'App', name: 'Foilmotion Tracking', image: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/30/4c/55/304c5573-2d93-1437-b22b-318b9db3430d/Placeholder.mill/1200x630wa.jpg', link: 'https://apps.apple.com/us/app/foil-wing-surf-foilmotion/id6737276093', price: 'App Store' },
       { id: 'r-wt', brand: 'Power Pumper Club', name: '1 Minute Challenge', image: 'https://static.wixstatic.com/media/2e9529_7bb0c1529bcf48738f371ebacb91487f~mv2.png/v1/fill/w_1960,h_1400,al_c,q_95,usm_0.66_1.00_0.01,enc_avif,quality_auto/Wix-3.png', link: 'https://www.wakethief.com/1min-challenge', price: 'Challenge' },
-      { id: 'r-podcast', brand: 'Podcast', name: 'Up on Foil', image: 'https://img.rss.com/up-on-foil/536/20251119_091107_21d6a1d282c3a6288e97ae5f7ca9413c.png', link: 'https://www.uponfoil.com/', price: '' },
+      { id: 'r-wt-podcast', brand: 'Podcast', name: 'Up on Foil', image: 'https://img.rss.com/up-on-foil/536/20251119_091107_21d6a1d282c3a6288e97ae5f7ca9413c.png', link: 'https://www.uponfoil.com/', price: '' },
       { id: 'r-physics', brand: 'Physics', name: 'Pump foil physics simulator', image: 'https://i.imgur.com/hb9Ymq2.png', link: 'https://lsegessemann.github.io/foilphysics', price: 'Interactive' }
     ];
 
@@ -100,7 +100,7 @@
       },
       {
         question: "What does it take to learn pump foiling?",
-        answer: "One of the most important aspects of learning pump foiling is resilience and consistency. Once you get started, try to go at least once a week. It will typically take 5 to 10 sessions of 1 to 2 hours to get your first consistant take offs. Just don't give up! And try to practice with others to get tips and feedback on what to improve."
+        answer: "One of the most important aspects of learning pump foiling is resilience and consistency. Once you get started, try to go at least once a week. It will typically take 5 to 10 sessions of 1 to 2 hours to get your first consistent take offs. Just don't give up! And try to practice with others to get tips and feedback on what to improve."
       },
       {
         question: "What are the types of start?",
@@ -111,8 +111,6 @@
         answer: "The first significant milestone in your pumping journey is reaching 1 minute, which will earn you your power pumper hat. The world record is 4h25 and 66km held by Nicolas Iten."
       }
     ];
-
-    const INSTAGRAM_POSTS = ['DFm6-mBsh9u', 'DExXvS3y7_r', 'C8p4Yn_M0zW'];
 
     // --- COMPONENTS ---
 
@@ -323,12 +321,15 @@
             </div>
             <a href="https://www.instagram.com/pumpfoilnews" target="_blank" className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-2xl border border-white/20 transition-all flex items-center gap-3 font-black text-xs uppercase tracking-widest group">Follow @pumpfoilnews</a>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {INSTAGRAM_POSTS.map((id) => (
-              <div key={id} className="relative bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 aspect-square">
-                <iframe src={`https://www.instagram.com/p/${id}/embed`} width="100%" height="100%" frameBorder="0" scrolling="no" allowTransparency="true" className="border-0 overflow-hidden"></iframe>
-              </div>
-            ))}
+          <div className="relative group bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 p-4 max-w-[1000px] mx-auto">
+            <iframe 
+              src="https://www.juicer.io/api/feeds/pumpfoilnews-849b1993-5d1f-458f-9863-d683515fa6db/iframe" 
+              frameBorder="0" 
+              width="100%" 
+              height="480px" 
+              style={{ display: 'block', margin: '0 auto', maxWidth: '100%' }}
+              title="Pump Foil News Feed"
+            ></iframe>
           </div>
         </div>
       </section>

@@ -1,11 +1,5 @@
 import React from 'react';
 
-const FEATURED_POSTS = [
-  'DFm6-mBsh9u', // Placeholder IDs - in a real app these would be fetched or managed
-  'DExXvS3y7_r',
-  'C8p4Yn_M0zW',
-];
-
 const NewsSection: React.FC = () => {
   return (
     <section id="news" className="py-24 bg-slate-900 text-white relative overflow-hidden">
@@ -41,24 +35,15 @@ const NewsSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {FEATURED_POSTS.map((postId) => (
-            <div key={postId} className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-[2.5rem] blur opacity-10 group-hover:opacity-30 transition duration-500"></div>
-              <div className="relative bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-white/5 aspect-square">
-                <iframe 
-                  src={`https://www.instagram.com/p/${postId}/embed`} 
-                  width="100%" 
-                  height="100%" 
-                  frameBorder="0" 
-                  scrolling="no" 
-                  allowTransparency={true}
-                  className="border-0 overflow-hidden"
-                  title={`Instagram Post ${postId}`}
-                ></iframe>
-              </div>
-            </div>
-          ))}
+        <div className="relative group bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 p-4 max-w-[1000px] mx-auto">
+          <iframe 
+            src="https://www.juicer.io/api/feeds/pumpfoilnews-849b1993-5d1f-458f-9863-d683515fa6db/iframe" 
+            frameBorder="0" 
+            width="1000" 
+            height="1000" 
+            style={{ display: 'block', margin: '0 auto', maxWidth: '100%' }}
+            title="Pump Foil News Feed"
+          ></iframe>
         </div>
 
         <div className="mt-16 text-center">
