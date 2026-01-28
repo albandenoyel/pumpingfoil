@@ -1,21 +1,47 @@
 import React, { useState } from 'react';
 
-const FAQ_DATA = [
+interface FaqItem {
+  question: string;
+  answer: string[];
+}
+
+const FAQ_DATA: FaqItem[] = [
   {
     question: "What is a pump foil?",
-    answer: "A pump foil is a hydrofoil connected to a board, powered just by your legs, which lets you fly above water. The feeling of glide is absolutely unique. You can practice this magical sport every day of the year, and anywhere there is water."
+    answer: [
+      "A hydrofoil connected to a compact, rigid board.",
+      "Powered entirely by leg movements (pumping) to create lift.",
+      "Allows for flight above water without the need for waves or wind.",
+      "Provides a unique 'infinite glide' sensation unlike any other board sport."
+    ]
   },
   {
     question: "What does it take to learn pump foiling?",
-    answer: "One of the most important aspects of learning pump foiling is resilience and consistency. Once you get started, try to go at least once a week. It will typically take 5 to 10 sessions of 1 to 2 hours to get your first consistant take offs. Just don't give up! And try to practice with others or film yourself and share to get feedback on what to improve."
+    answer: [
+      "High resilience: Consistency is more important than raw strength.",
+      "Weekly practice: Aim for at least one session per week to maintain muscle memory.",
+      "Learning curve: Typically takes 5-10 sessions of 1-2 hours to reach consistent flight.",
+      "Community: Practicing with others or filming yourself is the fastest way to improve."
+    ]
   },
   {
     question: "What are the types of start?",
-    answer: "Dockstart is the most common: you run on a dock until jumping on the board. Dropstart: you start with the foil above water and jump on it, so you need to have a jumping point that is typically between 60 and 100cm high. Deadstart: you start with the foil in water, and with no runing space, by just pushing the foil to get initial speed. Beachstart: you start from the beach, the hardest start. Flat start: you start from the water, you typically need a larger SUP board."
+    answer: [
+      "Dockstart: Running on a dock and jumping onto the board (most common).",
+      "Dropstart: Jumping from a height (60-100cm) onto a foil held above water.",
+      "Deadstart: Starting from a standstill in deep water (advanced).",
+      "Beachstart: Running from the shore into the water (hardest).",
+      "Flat start: Starting from a flat surface or a larger board like a SUP."
+    ]
   },
   {
     question: "How long can one pump?",
-    answer: "The first significant milestone in your pumping journey is reaching 1 minute, which will earn you your power pumper hat. The world record is 4h25 and 66km held by Nicolas Iten."
+    answer: [
+      "The 'Power Pumper' Milestone: Reaching 1 minute of sustained flight.",
+      "Intermediate standard: 2-5 minutes is considered a very solid session.",
+      "World Record: 4h 25m (66km) held by Nicolas Iten.",
+      "Energy usage: It is an intense cardio workout that scales with efficiency."
+    ]
   }
 ];
 
@@ -55,10 +81,17 @@ const FaqSection: React.FC = () => {
                 </span>
               </button>
               <div 
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${activeIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${activeIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}
               >
-                <div className="px-8 pb-8 text-slate-600 text-lg leading-relaxed font-medium">
-                  {item.answer}
+                <div className="px-8 pb-8">
+                  <ul className="space-y-3">
+                    {item.answer.map((point, pIndex) => (
+                      <li key={pIndex} className="flex items-start gap-3 text-slate-600 text-lg leading-relaxed font-medium">
+                        <span className="mt-2 flex-shrink-0 w-2 h-2 rounded-full bg-cyan-500 shadow-sm shadow-cyan-500/50"></span>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
