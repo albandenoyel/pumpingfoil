@@ -234,6 +234,30 @@ export const TUTORIALS: Tutorial[] = [
     duration: '03:15',
     thumbnail: 'https://img.youtube.com/vi/hFKKHqRgdGw/hqdefault.jpg',
     url: 'https://www.youtube.com/watch?v=hFKKHqRgdGw'
+  },
+  {
+    id: 't7',
+    title: 'The Secret to Dock Starting',
+    author: '@wakethief',
+    duration: '10:33',
+    thumbnail: 'https://img.youtube.com/vi/DoIGESRWpN8/hqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=DoIGESRWpN8'
+  },
+  {
+    id: 't8',
+    title: 'HOW TO PUMP FOIL - TUTO / CONSEILS',
+    author: '@HadrienBRUNNER',
+    duration: '12:56',
+    thumbnail: 'https://img.youtube.com/vi/QAt2BnYpsWs/hqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=QAt2BnYpsWs'
+  },
+  {
+    id: 't9',
+    title: 'LEARN TO DOCKSTART IN 5 MINUTES',
+    author: '@Stefoildoc',
+    duration: '06:17',
+    thumbnail: 'https://img.youtube.com/vi/fBYG48xN6TI/hqdefault.jpg',
+    url: 'https://www.youtube.com/watch?v=fBYG48xN6TI'
   }
 ];
 
